@@ -76,7 +76,7 @@ checks.
 
 import os
 
-OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
+OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR") or "/output"
 OUTPUT_PATH = os.path.join(OUTPUT_DIR, "entry.txt")
 
 # Each candidate: (line, on-subject, concrete, true-to-memory,
